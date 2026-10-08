@@ -1,0 +1,12 @@
+# 构建产物
+build/
+
+# 本地依赖与反编译产物（仅编译用，不入库）
+libs/
+net/
+com/
+assets/wurst/
+wurst-jar-scan/
+wurst-lang/
+wurst.mixins.json
+*.txt

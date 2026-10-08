@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "dev.upm.hidewurstbutton.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "PauseScreenMixin",
+    "ScreenAccessor",
+    "WurstLogoMixin",
+    "WurstOptionsOtfMixin",
+    "ToastManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
