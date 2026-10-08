@@ -32,8 +32,10 @@ public abstract class PauseScreenMixin {
 
     /**
      * 每帧渲染提取前兜底：无论 Wurst 何时把按钮加回来，渲染前都会被移除。
+     * 仅 26.3+ 的原版有此方法（7.56 的 Wurst 也只在 26.3 编译出对应钩子），
+     * 在 26.1/26.2 上不存在，require=0 允许静默跳过，上面的 TAIL 清理足够。
      */
-    @Inject(method = "extractRenderState", at = @At("HEAD"))
+    @Inject(method = "extractRenderState", at = @At("HEAD"), require = 0)
     private void hidewurst$removeBeforeExtract(CallbackInfo ci) {
         hidewurst$restore();
     }

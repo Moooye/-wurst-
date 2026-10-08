@@ -10,3 +10,4 @@ wurst-jar-scan/
 wurst-lang/
 wurst.mixins.json
 *.txt
+_cmp/
