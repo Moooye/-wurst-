@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(WurstUpdater.class)
 public abstract class WurstUpdaterMixin {
 
-    @Inject(method = "onUpdate()V", at = @At("HEAD"), require = 0)
+    @Inject(method = "onUpdate()V", at = @At("HEAD"), require = 0, cancellable = true)
     private void hidewurst$silenceUpdateNotice(CallbackInfo ci) {
         ci.cancel();
     }

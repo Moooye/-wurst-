@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wurst-xmenu",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "name": "Wurst XMenu",
   "description": "屏蔽 Wurst 的游戏内 logo 与暂停菜单按钮/图标行干扰，恢复原版界面与 ModMenu 按钮。",
   "authors": ["up_M"],
